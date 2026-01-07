@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";
-import authRoutes from "./routes/auth.routes.js";
-import passwordRoutes from "./routes/password.routes.js";
-import { errorHandler } from "./middlewares/error.middleware.js";
+// import authRoutes from "./routes/auth.routes.js";
+// import passwordRoutes from "./routes/password.routes.js";
+// import { errorHandler } from "./middlewares/error.middleware.js";
 
 const app = express();
 
@@ -19,11 +19,11 @@ app.use(
   })
 );
 
-/* Routes */
-app.use("/api/auth", authRoutes);
-app.use("/api/password", passwordRoutes);
+// /* Routes */
+// app.use("/api/auth", authRoutes);
+// app.use("/api/password", passwordRoutes);
 
 /* Error handler */
-app.use(errorHandler);
+// app.use(errorHandler);
 
 export default app;
